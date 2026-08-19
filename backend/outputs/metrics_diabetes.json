@@ -1,0 +1,44 @@
+{
+    "disease_type": "diabetes",
+    "disease_name": "Diabetes Risk",
+    "best_model": "SVM",
+    "best_f1_score": 0.3556,
+    "all_candidate_metrics": [
+        {
+            "model_name": "LogisticRegression",
+            "disease_name": "Diabetes Risk",
+            "accuracy": 0.6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "roc_auc": 0.4904
+        },
+        {
+            "model_name": "RandomForest",
+            "disease_name": "Diabetes Risk",
+            "accuracy": 0.5333,
+            "precision": 0.25,
+            "recall": 0.1364,
+            "f1_score": 0.1765,
+            "roc_auc": 0.439
+        },
+        {
+            "model_name": "SVM",
+            "disease_name": "Diabetes Risk",
+            "accuracy": 0.5167,
+            "precision": 0.3478,
+            "recall": 0.3636,
+            "f1_score": 0.3556,
+            "roc_auc": 0.4426
+        },
+        {
+            "model_name": "GradientBoosting",
+            "disease_name": "Diabetes Risk",
+            "accuracy": 0.5167,
+            "precision": 0.3333,
+            "recall": 0.3182,
+            "f1_score": 0.3256,
+            "roc_auc": 0.5072
+        }
+    ]
+}

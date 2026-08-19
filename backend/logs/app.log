@@ -1,0 +1,5 @@
+2026-08-19 17:30:36,961 | WARNING | disease_prediction | File /Users/koushik/Desktop/koushik_disease/backend/datasets/heart.csv not found. Generating synthetic dataset...
+2026-08-19 17:30:36,984 | INFO | disease_prediction | Generated synthetic dataset for 'heart' at: /Users/koushik/Desktop/koushik_disease/backend/datasets/heart.csv
+2026-08-19 17:30:53,664 | INFO | disease_prediction | Successfully loaded artifact: /Users/koushik/Desktop/koushik_disease/backend/models/preprocessor_diabetes.joblib
+2026-08-19 17:30:53,667 | INFO | disease_prediction | Successfully loaded artifact: /Users/koushik/Desktop/koushik_disease/backend/models/model_diabetes.joblib
+2026-08-19 17:30:53,668 | INFO | disease_prediction | Loaded predictor pipeline for disease: 'Diabetes'

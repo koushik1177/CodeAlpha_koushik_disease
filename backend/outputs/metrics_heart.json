@@ -1,0 +1,44 @@
+{
+    "disease_type": "heart",
+    "disease_name": "Heart Disease",
+    "best_model": "LogisticRegression",
+    "best_f1_score": 0.7111,
+    "all_candidate_metrics": [
+        {
+            "model_name": "LogisticRegression",
+            "disease_name": "Heart Disease",
+            "accuracy": 0.5667,
+            "precision": 0.5614,
+            "recall": 0.9697,
+            "f1_score": 0.7111,
+            "roc_auc": 0.578
+        },
+        {
+            "model_name": "RandomForest",
+            "disease_name": "Heart Disease",
+            "accuracy": 0.5167,
+            "precision": 0.5476,
+            "recall": 0.697,
+            "f1_score": 0.6133,
+            "roc_auc": 0.5948
+        },
+        {
+            "model_name": "SVM",
+            "disease_name": "Heart Disease",
+            "accuracy": 0.55,
+            "precision": 0.55,
+            "recall": 1.0,
+            "f1_score": 0.7097,
+            "roc_auc": 0.3496
+        },
+        {
+            "model_name": "GradientBoosting",
+            "disease_name": "Heart Disease",
+            "accuracy": 0.55,
+            "precision": 0.5536,
+            "recall": 0.9394,
+            "f1_score": 0.6966,
+            "roc_auc": 0.4579
+        }
+    ]
+}
