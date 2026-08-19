@@ -1,98 +1,63 @@
-# 🩺 End-to-End Disease Prediction System
+# 🩺 Disease Prediction System
 
-A production-ready Machine Learning and Streamlit web application designed for multi-disease prediction (Heart Disease, Diabetes, Parkinson's) using advanced classification algorithms, data preprocessing pipelines, and interactive diagnostic visualizations.
+A Machine Learning-based web application that predicts the possibility of different diseases based on user-provided medical information.
 
----
+## 🚀 Features
 
-## 📌 Features
+* 🩺 Multiple disease prediction
+* 🤖 Machine Learning-based predictions
+* 🌐 Interactive web interface
+* 🗄️ Database integration
+* 🧪 Prediction pipeline testing
 
-- **Multi-Disease Diagnostic Suite**:
-  - Heart Disease Prediction
-  - Diabetes Risk Assessment
-  - Parkinson's Disease Detection
-- **Robust ML Pipeline**: Automated data loading, feature scaling, missing value imputation, hyperparameter tuning, and cross-validation.
-- **Model Ensembling**: Trains and evaluates Logistic Regression, Random Forest, Support Vector Machines (SVM), Gradient Boosting, XGBoost, and LightGBM models.
-- **Interactive Web App**: Built with Streamlit for real-time risk predictions, visual feature impact analysis, and PDF report generation.
-- **Production Ready**: Modular software design, full type hinting, PEP8 compliance, unit tests, and comprehensive logging.
+## 🛠️ Technologies Used
 
----
+* Python
+* Scikit-learn
+* Pandas
+* NumPy
+* Streamlit
+* Database
 
-## 📂 Repository Structure
+## 📁 Project Structure
 
-```
-Disease_Prediction/
-├── requirements.txt              # Project dependencies
-├── README.md                     # Documentation & usage guide
-├── .gitignore                    # Git ignore file
-├── app.py                        # Streamlit web application entrypoint
-├── src/                          # Modular Python source package
-│   ├── __init__.py
-│   ├── config.py                 # Paths, hyperparameter grids & configurations
-│   ├── utils.py                  # Helper functions, logging & metric export
-│   ├── data_loader.py            # Dataset loading & dynamic synthetic fallback generator
-│   ├── preprocessing.py          # Data cleaning, scaling & encoding pipelines
-│   ├── visualization.py          # Seaborn/Matplotlib EDA & evaluation plotting
-│   ├── train.py                  # Model training & cross-validation runner
-│   ├── evaluate.py               # Model evaluation & metric calculation
-│   └── predict.py                # Inference pipeline for real-time predictions
-├── dataset/                      # CSV dataset files
-├── models/                       # Trained model artifacts (.joblib)
-├── notebooks/                    # Jupyter notebooks for exploratory analysis
-└── outputs/                      # Saved charts, evaluation plots & metrics
+```text
+CodeAlpha_koushik_disease/
+│
+├── backend/
+├── database/
+├── frontend/
+├── app.py
+├── requirements.txt
+├── test_pipeline.py
+└── README.md
 ```
 
----
+## ⚙️ Installation
 
-## 🛠️ Quick Start & Installation
-
-### 1. Clone or Open Workspace in VS Code
 ```bash
-git clone https://github.com/your-username/Disease_Prediction.git
-cd Disease_Prediction
-```
-
-### 2. Create and Activate Virtual Environment
-```bash
-# macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-
-# Windows (Command Prompt)
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 3. Install Dependencies
-```bash
-pip install --upgrade pip
+git clone https://github.com/koushik1177/CodeAlpha_koushik_disease.git
+cd CodeAlpha_koushik_disease
 pip install -r requirements.txt
 ```
 
----
+## ▶️ Run the Project
 
-## 🏃 Execution Guide
-
-### Train Models & Generate Pipelines
-To run data preprocessing, train all classification models, and save evaluation metrics & artifacts:
-```bash
-python -m src.train
-```
-
-### Launch Web Dashboard
-To run the interactive Streamlit application:
 ```bash
 streamlit run app.py
 ```
 
----
+## 🔄 Workflow
 
-## 🧪 Testing & Quality Assurance
-Run unit tests across data preprocessing and inference pipelines:
-```bash
-pytest tests/
-```
+**User Input → Data Processing → ML Model → Disease Prediction → Result**
 
----
+## 🎯 Objective
 
-## 📜 License
-Distributed under the MIT License. See `LICENSE` for details.
+To demonstrate how Machine Learning can be used to build a simple healthcare-oriented disease prediction application.
+
+## 👨‍💻 Author
+
+**Koushik Reddy**
+GitHub: https://github.com/koushik1177
+
+> ⚠️ **Disclaimer:** This project is for educational purposes only and should not be used as a substitute for professional medical diagnosis or advice.
