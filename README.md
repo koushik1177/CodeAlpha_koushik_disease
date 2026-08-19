@@ -1,49 +1,49 @@
 # 🩺 Disease Prediction System
 
-A Machine Learning-based web application that predicts the possibility of **Heart Disease, Diabetes, and Parkinson's Disease** using user-provided medical parameters.
+A machine learning-powered web application that predicts the risk of **Heart Disease, Diabetes, and Parkinson's Disease** based on user-provided medical parameters — built with Python and Streamlit.
 
 ## ✨ Features
 
-- ❤️ Heart Disease Prediction
-- 🩸 Diabetes Prediction
-- 🧠 Parkinson's Disease Prediction
-- 📊 Machine Learning-based predictions
-- 🖥️ Interactive Streamlit interface
-- 🧪 Model pipeline testing
+- ❤️ Heart Disease risk prediction
+- 🩸 Diabetes risk prediction
+- 🧠 Parkinson's Disease risk prediction
+- 📊 ML models trained on real medical datasets
+- 🖥️ Simple, interactive Streamlit UI
+- 🧪 Automated pipeline tests with Pytest
 
-## 🛠️ Technologies
+## 🛠️ Tech Stack
 
-Python • Scikit-learn • Pandas • NumPy • Streamlit • SQLite • Pytest
+`Python` · `Scikit-learn` · `Pandas` · `NumPy` · `Streamlit` · `SQLite` · `Pytest`
 
 ## 📁 Project Structure
 
+```
 CodeAlpha_koushik_disease/
-├── backend/
-├── database/
-├── frontend/
-├── app.py
+├── backend/          # ML models & prediction logic
+├── database/          # SQLite database files
+├── frontend/           # Streamlit UI components
+├── tests/                # Pipeline tests
+├── app.py              # Main application entry point
 ├── requirements.txt
-├── test_pipeline.py
 └── README.md
+```
 
-## 🚀 Installation & Usage
+## 🚀 Getting Started
 
-### 1. Clone the Repository
-
+```bash
+# 1. Clone the repository
 git clone https://github.com/koushik1177/CodeAlpha_koushik_disease.git
 cd CodeAlpha_koushik_disease
 
-### 2. Install Dependencies
-
+# 2. Install dependencies
 pip install -r requirements.txt
 
-### 3. Run the Application
-
+# 3. Run the app
 streamlit run app.py
 
-### 4. Run Tests
-
-pytest test_pipeline.py
+# 4. Run tests (optional)
+pytest tests/
+```
 
 ## 👨‍💻 Author
 
@@ -51,4 +51,4 @@ pytest test_pipeline.py
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.
+Licensed under the [MIT License](LICENSE).
