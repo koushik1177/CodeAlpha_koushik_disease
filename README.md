@@ -1,30 +1,44 @@
 # 🩺 Disease Prediction System
 
-A Machine Learning-based web application that predicts the possibility of different diseases based on user-provided medical information.
+A Machine Learning-based web application that predicts the possibility of **Heart Disease, Diabetes, and Parkinson's Disease** using user-provided medical parameters.
+
+Built with **Python, Scikit-learn, and Streamlit**, this project demonstrates an end-to-end Machine Learning workflow from data preprocessing and model training to real-time prediction.
 
 ## 🚀 Features
 
-* 🩺 Multiple disease prediction
-* 🤖 Machine Learning-based predictions
-* 🌐 Interactive web interface
+* ❤️ Heart Disease Prediction
+* 🩸 Diabetes Prediction
+* 🧠 Parkinson's Disease Prediction
+* 🤖 Multiple Machine Learning algorithms
+* 📊 Data preprocessing and model evaluation
+* 🖥️ Interactive Streamlit interface
 * 🗄️ Database integration
-* 🧪 Prediction pipeline testing
+* 🧪 Model pipeline testing
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies
 
-* Python
-* Scikit-learn
-* Pandas
-* NumPy
-* Streamlit
-* Database
+* **Python**
+* **Scikit-learn**
+* **Pandas & NumPy**
+* **XGBoost & LightGBM**
+* **Streamlit**
+* **Matplotlib & Seaborn**
+* **SQLite**
+* **Pytest**
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 CodeAlpha_koushik_disease/
 │
 ├── backend/
+│   ├── config/
+│   ├── database/
+│   ├── datasets/
+│   ├── models/
+│   ├── services/
+│   └── src/
+│
 ├── database/
 ├── frontend/
 ├── app.py
@@ -41,23 +55,46 @@ cd CodeAlpha_koushik_disease
 pip install -r requirements.txt
 ```
 
-## ▶️ Run the Project
+## ▶️ Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
+Then open the local Streamlit URL shown in your terminal.
+
 ## 🔄 Workflow
 
-**User Input → Data Processing → ML Model → Disease Prediction → Result**
+```text
+User Input
+    ↓
+Data Preprocessing
+    ↓
+Feature Processing
+    ↓
+ML Model
+    ↓
+Prediction
+    ↓
+Result
+```
 
-## 🎯 Objective
+## 🧪 Testing
 
-To demonstrate how Machine Learning can be used to build a simple healthcare-oriented disease prediction application.
+Run the test suite using:
+
+```bash
+pytest
+```
 
 ## 👨‍💻 Author
 
 **Koushik Reddy**
+
 GitHub: https://github.com/koushik1177
 
-> ⚠️ **Disclaimer:** This project is for educational purposes only and should not be used as a substitute for professional medical diagnosis or advice.
+## ⚠️ Disclaimer
+
+This project is developed for **educational purposes only**. The predictions should not be considered professional medical advice or used as a substitute for medical diagnosis.
+
+⭐ If you find this project useful, consider giving it a star!
