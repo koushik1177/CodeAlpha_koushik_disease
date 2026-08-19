@@ -1,33 +1,41 @@
 # 🩺 Disease Prediction System
 
-A **Machine Learning-based web application** that predicts the risk of **Heart Disease, Diabetes, and Parkinson's Disease** using user-provided medical parameters.
+A **Machine Learning-based web application** that predicts the likelihood of **Heart Disease, Diabetes, and Parkinson's Disease** using user-provided medical parameters.
 
-The project integrates Machine Learning models with an interactive **Streamlit** interface to provide a simple and user-friendly prediction experience.
+The application combines trained Machine Learning models with an interactive **Streamlit** interface to provide fast and easy-to-understand predictions.
 
-## ✨ Features
+> ⚠️ **Disclaimer:** This project is developed for educational and demonstration purposes only. It is not intended to provide medical diagnosis or replace professional medical advice.
 
-* ❤️ Heart Disease Prediction
-* 🩸 Diabetes Prediction
-* 🧠 Parkinson's Disease Prediction
-* 🤖 Machine Learning-based prediction
-* 📊 Data preprocessing and model evaluation
-* 🖥️ Interactive Streamlit interface
-* 🗄️ Database integration
-* 🧪 Pipeline testing
+---
+
+## 🚀 Features
+
+* ❤️ **Heart Disease Prediction**
+* 🩸 **Diabetes Prediction**
+* 🧠 **Parkinson's Disease Prediction**
+* 🤖 Machine Learning-based classification
+* 📊 Model evaluation and prediction pipeline
+* 🖥️ Interactive Streamlit user interface
+* 🧹 Data preprocessing and feature handling
+* 🧪 Testing support
+* 📁 Organized project structure
+* ⚡ Simple and user-friendly prediction workflow
+
+---
 
 ## 🛠️ Technologies Used
 
 * **Python**
+* **Streamlit**
 * **Scikit-learn**
 * **Pandas**
 * **NumPy**
-* **XGBoost**
-* **LightGBM**
-* **Streamlit**
 * **Matplotlib**
 * **Seaborn**
-* **SQLite**
+* **Joblib**
 * **Pytest**
+
+---
 
 ## 📂 Project Structure
 
@@ -35,109 +43,236 @@ The project integrates Machine Learning models with an interactive **Streamlit**
 CodeAlpha_koushik_disease/
 │
 ├── backend/
-│   ├── config/
-│   ├── database/
-│   ├── dataset/
-│   ├── datasets/
-│   ├── logs/
 │   ├── models/
-│   ├── outputs/
-│   ├── services/
-│   └── src/
+│   ├── ...
+│
+├── frontend/
+│   ├── ...
 │
 ├── database/
-├── frontend/
-├── .gitignore
-├── app.py
-├── requirements.txt
+│   ├── ...
+│
 ├── test_pipeline.py
-└── README.md
+├── requirements.txt
+├── README.md
+└── ...
 ```
 
-## ⚙️ Installation
+---
 
-### 1. Clone the Repository
+## ⚙️ How It Works
+
+The system follows a simple Machine Learning workflow:
+
+```text
+User Input
+    ↓
+Data Preprocessing
+    ↓
+Feature Transformation
+    ↓
+Trained ML Model
+    ↓
+Prediction
+    ↓
+Result Displayed in Streamlit
+```
+
+Users select a disease prediction module, enter the required parameters, and submit the information. The trained model processes the input and returns the corresponding prediction.
+
+---
+
+## 🧠 Prediction Modules
+
+### ❤️ Heart Disease
+
+Uses relevant health and clinical parameters to estimate the likelihood of heart disease.
+
+### 🩸 Diabetes
+
+Uses patient-related medical parameters to estimate the likelihood of diabetes.
+
+### 🧠 Parkinson's Disease
+
+Uses voice-related biomedical measurements to estimate the likelihood of Parkinson's disease.
+
+---
+
+## 📊 Machine Learning Workflow
+
+The project follows these major steps:
+
+1. Data collection
+2. Data preprocessing
+3. Feature selection and transformation
+4. Dataset splitting
+5. Model training
+6. Model evaluation
+7. Model saving
+8. User input through Streamlit
+9. Prediction using the trained model
+10. Displaying the result
+
+---
+
+## 🖥️ Application Interface
+
+The application provides a simple interface where users can:
+
+* Select the required prediction module
+* Enter the required parameters
+* Submit the input
+* View the prediction result
+
+### 📸 Screenshots
+
+Add your application screenshots here:
+
+```text
+screenshots/
+├── home.png
+├── heart_prediction.png
+├── diabetes_prediction.png
+└── parkinsons_prediction.png
+```
+
+Example:
+
+```markdown
+![Home Page](screenshots/home.png)
+```
+
+---
+
+## 🔧 Installation
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/koushik1177/CodeAlpha_koushik_disease.git
 cd CodeAlpha_koushik_disease
 ```
 
-### 2. Create a Virtual Environment
-
-**Windows**
+### 2. Create a virtual environment
 
 ```bash
 python -m venv venv
+```
+
+### 3. Activate the virtual environment
+
+**Windows:**
+
+```bash
 venv\Scripts\activate
 ```
 
-**macOS / Linux**
+**macOS / Linux:**
 
 ```bash
-python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Install Dependencies
+### 4. Install dependencies
 
 ```bash
-pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
+---
 
 ## ▶️ Run the Application
 
 Start the Streamlit application using:
 
 ```bash
-streamlit run app.py
+streamlit run frontend/app.py
 ```
 
-The application will open in your browser using the local Streamlit URL displayed in the terminal.
+If your main Streamlit file has a different name or location, replace the path with the correct file.
 
-## 🧪 Testing
+The application will open in your browser.
 
-Run the available pipeline test using:
+---
+
+## 🧪 Running Tests
+
+Run the available pipeline tests using:
 
 ```bash
-pytest test_pipeline.py
+pytest
 ```
 
-## 🔄 Machine Learning Workflow
+Testing helps verify that the Machine Learning pipeline and related components are functioning correctly.
 
-```text
-User Input
-    ↓
-Data Validation
-    ↓
-Data Preprocessing
-    ↓
-Feature Processing
-    ↓
-Machine Learning Model
-    ↓
-Prediction
-    ↓
-Result
-```
+---
 
-## 🎯 Project Objective
+## 📈 Model Evaluation
 
-The objective of this project is to demonstrate the practical application of **Machine Learning in healthcare-oriented prediction systems**, covering data preprocessing, model development, evaluation, and deployment through a web interface.
+The models are evaluated using appropriate classification metrics such as:
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Confusion Matrix
+
+> Model performance can vary depending on the dataset, preprocessing techniques, features, and training configuration.
+
+---
+
+## 🔐 Important Note
+
+This application demonstrates the use of Machine Learning for educational purposes.
+
+Predictions generated by the system **should not be considered medical advice, diagnosis, or treatment recommendations**. Always consult a qualified healthcare professional for medical decisions.
+
+---
+
+## 🎯 Project Objectives
+
+The main objectives of this project are to:
+
+* Apply Machine Learning to real-world healthcare datasets
+* Build classification models for multiple diseases
+* Understand data preprocessing and model evaluation
+* Integrate Machine Learning models into a web application
+* Create an intuitive interface for demonstrating ML predictions
+
+---
+
+## 🔮 Future Improvements
+
+Potential future enhancements include:
+
+* 📊 Advanced model comparison
+* 📈 Interactive prediction visualizations
+* 🔐 User authentication
+* ☁️ Cloud deployment
+* 📱 Responsive UI improvements
+* 🧠 Additional disease prediction modules
+* 📋 Prediction history
+* 🔍 Explainable AI features
+* 📊 More detailed model performance dashboards
+
+---
 
 ## 👨‍💻 Author
 
 **Koushik Reddy**
 
-GitHub: [koushik1177](https://github.com/koushik1177)
-
-## ⚠️ Disclaimer
-
-This project is developed **for educational purposes only**.
-
-The predictions generated by this application are not intended to replace professional medical diagnosis, treatment, or advice. Users should consult a qualified healthcare professional for medical decisions.
+GitHub:
+https://github.com/koushik1177
 
 ---
 
-⭐ **If you find this project useful, consider giving it a star!**
+## ⭐ Support
+
+If you find this project useful or interesting, consider giving the repository a ⭐ on GitHub.
+
+---
+
+## 📄 License
+
+This project is intended for educational and demonstration purposes.
+
