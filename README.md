@@ -1,54 +1,109 @@
 # 🩺 Disease Prediction System
 
-A machine learning-powered web application that predicts the risk of **Heart Disease, Diabetes, and Parkinson's Disease** based on user-provided medical parameters — built with Python and Streamlit.
+A **Machine Learning-based web application** that predicts the risk of **Heart Disease, Diabetes, and Parkinson's Disease** using user-provided medical parameters.
+
+Built with **Python, Machine Learning, and Streamlit**.
 
 ## ✨ Features
 
-- ❤️ Heart Disease risk prediction
-- 🩸 Diabetes risk prediction
-- 🧠 Parkinson's Disease risk prediction
-- 📊 ML models trained on real medical datasets
-- 🖥️ Simple, interactive Streamlit UI
-- 🧪 Automated pipeline tests with Pytest
+* ❤️ Heart Disease Prediction
+* 🩸 Diabetes Prediction
+* 🧠 Parkinson's Disease Prediction
+* 🤖 Machine Learning-based prediction models
+* 📊 Interactive Streamlit interface
+* 🧪 Pipeline testing with Pytest
+* 📄 Simple and user-friendly interface
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies
 
-`Python` · `Scikit-learn` · `Pandas` · `NumPy` · `Streamlit` · `SQLite` · `Pytest`
+* Python
+* Scikit-learn
+* Pandas
+* NumPy
+* Streamlit
+* Pytest
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-```
+```text
 CodeAlpha_koushik_disease/
-├── backend/          # ML models & prediction logic
-├── database/          # SQLite database files
-├── frontend/           # Streamlit UI components
-├── tests/                # Pipeline tests
-├── app.py              # Main application entry point
+│
+├── backend/
+├── database/
+├── frontend/
+├── app.py
 ├── requirements.txt
+├── test_pipeline.py
 └── README.md
 ```
 
-## 🚀 Getting Started
+## 🚀 Installation
+
+### 1. Clone the repository
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/koushik1177/CodeAlpha_koushik_disease.git
 cd CodeAlpha_koushik_disease
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run the app
-streamlit run app.py
-
-# 4. Run tests (optional)
-pytest tests/
 ```
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**macOS/Linux**
+
+```bash
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## ▶️ Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser.
+
+## 🧪 Testing
+
+Run all available tests:
+
+```bash
+pytest
+```
+
+Or run the pipeline test directly:
+
+```bash
+pytest test_pipeline.py
+```
+
+## ⚠️ Disclaimer
+
+This project is developed for **educational and demonstration purposes only**. Predictions should not be considered medical advice or a substitute for professional medical diagnosis.
 
 ## 👨‍💻 Author
 
 **Koushik Reddy**
 
+GitHub: https://github.com/koushik1177
+
 ## 📄 License
 
-Licensed under the [MIT License](LICENSE).
+This project is intended for educational purposes.
